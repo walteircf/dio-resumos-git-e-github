@@ -101,3 +101,20 @@ $ git restore --staged ARQUIVO A SER REMOVIDO
 ```
 
 ## Enviando e baixando alterações com o repositório remoto
+
+Após criar o repositório vazio no Github, podemos usar os seguintes comandos, caso o repositório local não tenha sido iniciado e também esteja vazio: 
+```
+echo "# nome da pasta" >> README.md - para criar um arquivo 
+git init - para iniciar o repositório
+git add README.md - para adicionar o arquivo ao Stage
+git commit -m "first commit" - para adicionar o primeiro comentario
+git branch -M main - para forçar a troca da nomenclatura do branch de "master" para "main", caso não tenha alterado nas configurações do Git
+git remote add origin git@github.com:walteircf/dio-resumos-git-e-github.git - para linkar os repositórios remoto e local
+git push -u origin main - para enviar os arquivos para o github
+```
+Ou, caso já tenha arquivos no repositório local e já esteja iniciado:
+```
+git remote add origin git@github.com:walteircf/dio-resumos-git-e-github.git
+git branch -M main
+git push -u origin main
+```
