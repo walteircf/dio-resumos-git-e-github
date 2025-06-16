@@ -7,6 +7,12 @@ Repositório para armazenar resumos do curos de versionamento de código com git
 - [Documentação Git](https://git-scm.com/doc)
 - [Documentação GitHub](https://docs.github.com/)
 
+## Índice de Aulas
+
+| Aulas | Resumos |
+|-------|---------|
+|Gravando alterações no Repositório Local|[Resumo](./resumos/aula%2001.md)
+
 ## 🖥️ Resumos das Aulas
 
 Inicie o repositório local
