@@ -124,3 +124,36 @@ git remote add origin git@github.com:walteircf/dio-resumos-git-e-github.git
 git branch -M main
 git push -u origin main
 ```
+## Trabalhando com branchs
+
+- branch de maneira simplória É uma ramificação do seu projeto.
+- Quando se cria uma nova branch pode-se utiliza-la para testar novos recursos sem comprometer a branch principal.
+
+Para criar uma nova branch usamos o comando
+```
+$ git checkout -b "nome da nova branch"
+```
+Assim qualquer alteração realizada será efetuada apenas no ambiente da branch criada
+
+Para retornar para a branch main, basta usar o comando
+```
+$ git checkout main
+```
+Para listar todas as branchs e seus ultimos commits, usamos:
+```
+$ git branch -v
+```
+Para que as alterações de uma branch seja aplicada no "main", precisamos mesclar as branchs da seguinte forma:
+```
+$ git merge "nome da branch a ser mesclada com a main"
+```
+Após mesclar as branchs, e desejar deletar a branch mesclada, listamos as branchs usando:
+```
+$ git branch
+```
+o "*" mostrará qual branch estamos atualmente
+
+Em seguida, utilizamos o comando: 
+```
+$ git branch -d "nome da branch a ser excluida"
+```
