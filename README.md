@@ -157,3 +157,47 @@ Em seguida, utilizamos o comando:
 ```
 $ git branch -d "nome da branch a ser excluida"
 ```
+## Comandos úteis para o dia a dia
+### Visualizando alterações remotas antes de mesclar-las ao repositório local
+```
+$ git fetch
+```
+Esse comando baixa as alterações do repositório remoto, mas não mescla com o repositório local.
+
+Para observar as diferenças antes de mesclar, podemos utilizar o comando
+```
+$ git diff main origin/main
+```
+para listar as alterações.
+
+Após analisar as alterações e desejar mescla-las, basta utilizar o comando
+```
+$ git merge origin/main
+```
+
+### Clonando repositórios com várias branchs
+Para clonar um repositório que possui várias branchs e você só deseja um delas, utilizamos:
+```
+$ git clone *url* --branch "branch desejada" --single-branch
+```
+### Arquivando modificações
+```
+$ git stash
+```
+Ele arquiva a modificação mais recente
+
+para listar as alterações usamos:
+```
+$ git stath listamos
+```
+E para trazer a modificação arquivada, temos duas opções:
+```
+$git stash pop
+```
+para trazer a alteração arquivada, removendo-a da pilha.
+
+ou
+```
+$ git stash apply
+```
+para manter as alterações na lista
