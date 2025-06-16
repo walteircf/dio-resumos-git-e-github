@@ -100,3 +100,4 @@ Para remover arquivos da área de preparação, é possivel utilizar o comando "
 $ git restore --staged ARQUIVO A SER REMOVIDO
 ```
 
+## Enviando e baixando alterações com o repositório remoto
